@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        model-viewer {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualizza il modello in AR</h1>
+    <model-viewer 
+        src="https://drive.google.com/uc?id=1p0qpXtMypHaRfScjwtwphqdfTXIFh_My&export=download" 
+        alt="Sailboat 3D Model" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls>
+    </model-viewer>
+</body>
+</html>
