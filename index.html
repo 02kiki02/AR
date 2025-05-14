@@ -2,7 +2,6 @@
 <html lang="it">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -10,19 +9,17 @@
             padding: 50px;
         }
         model-viewer {
-            width: 100%;
+            width: 60%;
             height: 500px;
         }
     </style>
 </head>
 <body>
     <h1>Visualizza il modello in AR</h1>
-    <model-viewer 
-        src="https://02kiki02.github.io/AR/sailboat.usdz" 
-        alt="Sailboat 3D Model" 
-        ar 
-        ar-modes="quick-look"
-        camera-controls>
-    </model-viewer>
+    <!-- Modifica per Quick Look su iOS con fallback -->
+    <a href="https://02kiki02.github.io/AR/sailboat.usdz" 
+       title="Visualizza in AR con Quick Look">
+       <img src="https://via.placeholder.com/600x400.png?text=Visualizza+il+modello+in+AR" alt="Model Preview">
+    </a>
 </body>
 </html>
